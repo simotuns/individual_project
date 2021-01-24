@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.label {
+  color: white;
+  padding: 3px;
+  font-family: Arial;
+}
+.blue {background-color: #73C6FA;}
+.red {background-color: #C93232;} 
+.purple {background-color: #583d72;} /* Orange */
+.orange {background-color: #f58634;} /* Red */ 
+.pink {background-color: #ffc1b6; } /* Gray */ 
+.yellow {background-color: #FADF73; } 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-image: url('https://images.hdqwalls.com/wallpapers/abstract-simple-background-4k-lp.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  
+ .btn:hover {
+  background-color: RoyalBlue;
+
+}
+</style>
+</head>
+<body>
+<h1 style="color:white;">Instructions</h1>
+<br>
+<dd style="text-align:center;color: #fff3e6">Use the up, down left and right arrows in order to move</dd>
+<dl>
+  <dt style="text-align:center"><span class="label purple">Dark purple</span></dt>
+  <br>
+  <dd style="text-align:center;color: #fff3e6">- if you see this color you are on the right path</dd>
+  <br>
+  <br>
+  <dt style="text-align:center"><span class="label red">Red</span></dt>
+  <br>
+  <dd style="text-align:center;color: #fff3e6">- lava, you die</dd>
+  <br>
+  <br>
+  <dt style="text-align:center"><span class="label blue">Bright blue</span></dt>
+  <br>
+  <dd style="text-align:center;color: #fff3e6">- change ball's color</dd>
+  <br>
+  <br>
+   <dt style="text-align:center"><span class="label orange">Orange</span></dt>
+   <br>
+  <dd style="text-align:center;color: #fff3e6">- open locked door</dd>
+  <br>
+  <br>
+    <dt style="text-align:center"><span class="label pink">Baby pink</span></dt>
+	<br>
+  <dd style="text-align:center;color: #fff3e6">- jump</dd>
+  <br>
+  <br>
+ <dt style="text-align:center"><span class="label yellow">Yellow</span></dt>
+ <br>
+  <dd style="text-align:center;color: #fff3e6">- you win</dd>
+  
+</dl>
+<button class="btn"; onclick="document.location='home.html'"><i class="fa fa-home"></i> Home</button>
+
+ <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
+
+</html>
